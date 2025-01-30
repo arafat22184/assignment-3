@@ -51,6 +51,9 @@
       .categCard {
         @apply bg-[#F9DF8A] flex flex-col items-center content-center px-12 py-9 rounded-xl space-y-4 hover:bg-[#FFEFBB] cursor-pointer;
       }
+      .petBedCard {
+        @apply flex gap-[10px] md:gap-4 items-center content-center bg-white border rounded-[10px] py-[10px] pl-[10px] md:py-4 md:pl-4
+      }
     </style>
   </head>
   <body class="font-sora">
@@ -148,10 +151,10 @@
       </section>
     </header>
     <main
-      class="w-11/12 mx-auto mt-[190px] sm:mt-[320px] lg:mt-[350px] xl:mt-[400px] 2xl:mt-[720px]"
+      class="mt-[190px] sm:mt-[320px] lg:mt-[350px] xl:mt-[400px] 2xl:mt-[720px]"
     >
       <!-- Categories Section -->
-      <section>
+      <section class="w-11/12 mx-auto">
         <h2 class="font-adlam text-2xl mb-8 md:text-4xl md:mb-12">
           Browse By Categories
         </h2>
@@ -210,6 +213,248 @@
             <h3 class="font-adlam sm:text-xl">Rabbit</h3>
             <p>3 items</p>
           </div>
+        </div>
+      </section>
+
+      <!-- Products Section -->
+      <section class="mt-14 md:mt-32 lg:py-[140px] bg-none sm:bg-secondarys">
+        <!-- Products Container -->
+        <div class="w-11/12 mx-auto">
+          <h2 class="font-adlam text-2xl mb-8 md:text-4xl md:mb-12">
+            Trending Pet Products
+          </h2>
+
+          <!-- Products -->
+          <div class="flex flex-col xl:flex-row gap-6 items-center justify-between">
+
+            <!-- Big Dog -->
+          <div class="bg-[#F9DF8A] rounded-[10px] w-full xl:w-4/12 h-[370px] sm:h-[402px] relative
+          pt-[43px] pl-[26px] sm:pt-[51px] sm:pl-8
+          ">
+
+            <!-- Text content -->
+            <div class="space-y-[18px] sm:space-y-5 ">
+              <h3 class="font-adlam text-2xl md:text-[32px]">
+                T- Shirt For Dogs
+              </h3>
+              <p class="text-[rgba(17, 17, 17, 0.7)]">
+                Discover a world of treats, toys, and<br />
+                essentials handpicked for
+              </p>
+              <button class="button bg-white">Shop Now</button>
+            </div>
+
+            <!-- Image Container -->
+            <div class="absolute top-[55px] -right-[10px] sm:top-[85px] sm:right-10
+            ">
+              <img src="./assets/cute-pet-small.png" alt="Cute Pet dog" />
+            </div>
+          </div>
+
+
+          <!-- Cards Container -->
+          <div class="grid grid-cols-2 gap-[14px] sm:gap-6 sm:grid-cols-3 w-full xl:w-8/12">
+
+            <!-- Card-1 -->
+             <div class="petBedCard">
+
+              <!-- Image -->
+               <div>
+                <img class="hidden md:block p-[12px] md:p-[19px] rounded-md bg-secondarys" src="./assets/dog-cartoon.png" alt="dog">
+                <img class="block md:hidden p-[12px] md:p-[19px] rounded-md bg-secondarys" src="./assets/pet-couch.png" alt="Pet Couch">
+              </div>
+
+              <!-- Text Content -->
+               <div>
+                <!-- rating -->
+              <div class="flex gap-3 items-center content-center">
+                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                <p class="text-[10px] md:text-base">4.5</p>
+              </div>
+              <h4 class="text-[12px] md:text-xl font-medium">Pet Bed</h4>
+              <p class="text-[10px] md:text-base">$39.99</p>
+               </div>
+
+             </div>
+
+             <!-- Card-2 -->
+             <div class="petBedCard">
+
+              <!-- Image -->
+               <div>
+                <img class="hidden md:block p-[12px] md:p-[19px] rounded-md bg-secondarys" src="./assets/fish-cartoon.png" alt="dog">
+                <img class="block md:hidden p-[12px] md:p-[19px] rounded-md bg-secondarys" src="./assets/pet-couch.png" alt="Pet Couch">
+              </div>
+
+              <!-- Text Content -->
+               <div>
+                <!-- rating -->
+              <div class="flex gap-3 items-center content-center">
+                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                <p class="text-[10px] md:text-base">4.5</p>
+              </div>
+              <h4 class="text-[12px] md:text-xl font-medium">Pet Bed</h4>
+              <p class="text-[10px] md:text-base">$39.99</p>
+               </div>
+
+             </div>
+
+             <!-- Card-3 -->
+             <div class="petBedCard">
+
+              <!-- Image -->
+               <div>
+                <img class="hidden md:block p-[12px] md:p-[19px] rounded-md bg-secondarys" src="./assets/bird-cartoon.png" alt="dog">
+                <img class="block md:hidden p-[12px] md:p-[19px] rounded-md bg-secondarys" src="./assets/pet-couch.png" alt="Pet Couch">
+              </div>
+
+              <!-- Text Content -->
+               <div>
+                <!-- rating -->
+              <div class="flex gap-3 items-center content-center">
+                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                <p class="text-[10px] md:text-base">4.5</p>
+              </div>
+              <h4 class="text-[12px] md:text-xl font-medium">Pet Bed</h4>
+              <p class="text-[10px] md:text-base">$39.99</p>
+               </div>
+
+             </div>
+
+             <!-- Card-4 -->
+             <div class="petBedCard">
+
+              <!-- Image -->
+               <div>
+                <img class="hidden md:block p-[12px] md:p-[19px] rounded-md bg-secondarys" src="./assets/rabbit-cartoon.png" alt="dog">
+                <img class="block md:hidden p-[12px] md:p-[19px] rounded-md bg-secondarys" src="./assets/pet-couch.png" alt="Pet Couch">
+              </div>
+
+              <!-- Text Content -->
+               <div>
+                <!-- rating -->
+              <div class="flex gap-3 items-center content-center">
+                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                <p class="text-[10px] md:text-base">4.5</p>
+              </div>
+              <h4 class="text-[12px] md:text-xl font-medium">Pet Bed</h4>
+              <p class="text-[10px] md:text-base">$39.99</p>
+               </div>
+
+             </div>
+
+             <!-- Card-5 -->
+             <div class="petBedCard">
+
+              <!-- Image -->
+               <div>
+                <img class="hidden md:block p-[12px] md:p-[19px] rounded-md bg-secondarys" src="./assets/bird-cartoon.png" alt="dog">
+                <img class="block md:hidden p-[12px] md:p-[19px] rounded-md bg-secondarys" src="./assets/pet-couch.png" alt="Pet Couch">
+              </div>
+
+              <!-- Text Content -->
+               <div>
+                <!-- rating -->
+              <div class="flex gap-3 items-center content-center">
+                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                <p class="text-[10px] md:text-base">4.5</p>
+              </div>
+              <h4 class="text-[12px] md:text-xl font-medium">Pet Bed</h4>
+              <p class="text-[10px] md:text-base">$39.99</p>
+               </div>
+
+             </div>
+
+             <!-- Card-6 -->
+             <div class="petBedCard">
+
+              <!-- Image -->
+               <div>
+                <img class=" p-[12px] md:p-[19px] rounded-md bg-secondarys" src="./assets/pet-couch.png" alt="Pet Couch">
+              </div>
+
+              <!-- Text Content -->
+               <div>
+                <!-- rating -->
+              <div class="flex gap-3 items-center content-center">
+                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                <p class="text-[10px] md:text-base">4.5</p>
+              </div>
+              <h4 class="text-[12px] md:text-xl font-medium">Pet Bed</h4>
+              <p class="text-[10px] md:text-base">$39.99</p>
+               </div>
+
+             </div>
+
+             <!-- Card-7 -->
+             <div class="petBedCard">
+
+              <!-- Image -->
+               <div>
+                <img class="hidden md:block p-[12px] md:p-[19px] rounded-md bg-secondarys" src="./assets/fish-cartoon.png" alt="dog">
+                <img class="block md:hidden p-[12px] md:p-[19px] rounded-md bg-secondarys" src="./assets/pet-couch.png" alt="Pet Couch">
+              </div>
+
+              <!-- Text Content -->
+               <div>
+                <!-- rating -->
+              <div class="flex gap-3 items-center content-center">
+                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                <p class="text-[10px] md:text-base">4.5</p>
+              </div>
+              <h4 class="text-[12px] md:text-xl font-medium">Pet Bed</h4>
+              <p class="text-[10px] md:text-base">$39.99</p>
+               </div>
+
+             </div>
+
+             <!-- Card-8 -->
+             <div class="petBedCard">
+
+              <!-- Image -->
+               <div>
+                <img class="p-[12px] md:p-[19px] rounded-md bg-secondarys" src="./assets/pet-couch.png" alt="Pet Couch">
+              </div>
+
+              <!-- Text Content -->
+               <div>
+                <!-- rating -->
+              <div class="flex gap-3 items-center content-center">
+                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                <p class="text-[10px] md:text-base">4.5</p>
+              </div>
+              <h4 class="text-[12px] md:text-xl font-medium">Pet Bed</h4>
+              <p class="text-[10px] md:text-base">$39.99</p>
+               </div>
+
+             </div>
+
+             <!-- Card-9 -->
+             <div class="hidden sm:flex gap-[10px] md:gap-4 items-center content-center bg-white border rounded-[10px] py-[10px] pl-[10px] pr-12 md:py-4 md:pl-4 md:pr-20 ">
+
+              <!-- Image -->
+               <div>
+                <img class="hidden md:block p-[12px] md:p-[19px] rounded-md bg-secondarys" src="./assets/rabbit-cartoon.png" alt="dog">
+                <img class="block md:hidden p-[12px] md:p-[19px] rounded-md bg-secondarys" src="./assets/pet-couch.png" alt="Pet Couch">
+              </div>
+
+              <!-- Text Content -->
+               <div>
+                <!-- rating -->
+              <div class="flex gap-3 items-center content-center">
+                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                <p class="text-[10px] md:text-base">4.5</p>
+              </div>
+              <h4 class="text-[12px] md:text-xl font-medium">Pet Bed</h4>
+              <p class="text-[10px] md:text-base">$39.99</p>
+               </div>
+
+             </div>
+
+          </div>
+
+          </div>
+        
         </div>
       </section>
     </main>
