@@ -48,6 +48,9 @@
       .button {
         @apply px-8 py-3 rounded-lg;
       }
+      .categCard {
+        @apply bg-[#F9DF8A] flex flex-col items-center content-center px-12 py-9 rounded-xl space-y-4 hover:bg-[#FFEFBB] cursor-pointer;
+      }
     </style>
   </head>
   <body class="font-sora">
@@ -124,7 +127,7 @@
       <!-- Banner Section -->
       <section class="w-11/12 mx-auto relative">
         <!-- Banner Text Content -->
-        <div class="space-y-4 relative z-10">
+        <div class="space-y-4 z-10">
           <h2 class="font-adlam text-3xl lg:text-[56px] lg:leading-none">
             Pamper Your Pet,<br />
             Because They Deserve<br />the Best
@@ -144,5 +147,71 @@
         </div>
       </section>
     </header>
+    <main
+      class="w-11/12 mx-auto mt-[190px] sm:mt-[320px] lg:mt-[350px] xl:mt-[400px] 2xl:mt-[720px]"
+    >
+      <!-- Categories Section -->
+      <section>
+        <h2 class="font-adlam text-2xl mb-8 md:text-4xl md:mb-12">
+          Browse By Categories
+        </h2>
+        <!-- Card Container -->
+        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4">
+          <!-- Card-1 -->
+          <div class="categCard">
+            <div class="p-7 bg-white rounded-full">
+              <img src="./assets/dog-cartoon.png" alt="" />
+            </div>
+            <h3 class="font-adlam sm:text-xl">Dog</h3>
+            <p>3 items</p>
+          </div>
+
+          <!-- Card-2 -->
+          <div class="categCard">
+            <div class="p-7 bg-white rounded-full">
+              <img src="./assets/fish-cartoon.png" alt="" />
+            </div>
+            <h3 class="font-adlam sm:text-xl">Fish</h3>
+            <p>3 items</p>
+          </div>
+
+          <!-- Card-3 -->
+          <div class="categCard">
+            <div class="p-7 bg-white rounded-full">
+              <img src="./assets/cat-cartoon.png" alt="" />
+            </div>
+            <h3 class="font-adlam sm:text-xl">Cat</h3>
+            <p>3 items</p>
+          </div>
+
+          <!-- Card-4 -->
+          <div class="categCard">
+            <div class="p-7 bg-white rounded-full">
+              <img src="./assets/bird-cartoon.png" alt="" />
+            </div>
+            <h3 class="font-adlam sm:text-xl">Birds</h3>
+            <p>3 items</p>
+          </div>
+
+          <!-- Card-5 -->
+          <div class="categCard">
+            <div class="p-7 bg-white rounded-full">
+              <img src="./assets/mouse-cartoon.png" alt="" />
+            </div>
+            <h3 class="font-adlam sm:text-xl">Small pet</h3>
+            <p>3 items</p>
+          </div>
+
+          <!-- Card-6 -->
+          <div class="categCard">
+            <div class="p-7 bg-white rounded-full">
+              <img src="./assets/rabbit-cartoon.png" alt="" />
+            </div>
+            <h3 class="font-adlam sm:text-xl">Rabbit</h3>
+            <p>3 items</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
