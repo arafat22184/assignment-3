@@ -31,7 +31,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Tailwind Css Link -->
-    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
     <style type="text/tailwindcss">
       @theme {
         --font-adlam: ADLam Display, serif;
@@ -42,13 +41,13 @@
         --color-texts: #111111;
       }
       .button {
-        @apply px-8 py-3 rounded-lg hover:bg-[#ffefbb] hover:border-2 hover:border-[#f9df8a] sm:text-xl cursor-pointer;
+        @apply px-6 py-2 sm:px-8 sm:py-3 rounded-lg hover:bg-[#ffefbb] hover:border-2 hover:border-[#f9df8a] sm:text-xl cursor-pointer;
       }
       .categCard {
-        @apply bg-[#F9DF8A] flex flex-col items-center content-center px-12 py-9 rounded-xl space-y-4 hover:bg-[#FFEFBB] cursor-pointer;
+        @apply bg-[#F9DF8A] flex flex-col items-center justify-center px-12 py-9 rounded-xl space-y-4 hover:bg-[#FFEFBB] cursor-pointer;
       }
       .petBedCard {
-        @apply flex gap-[10px] md:gap-4 items-center content-center bg-white rounded-[10px] py-[10px] pl-[10px] md:py-4 md:pl-4 hover:bg-[#FFEFBB] cursor-pointer border border-slate-200
+        @apply flex gap-[10px] md:gap-4 items-center bg-white rounded-[10px] py-[10px] pl-[10px] md:py-4 md:pl-4 hover:bg-[#FFEFBB] cursor-pointer border border-slate-200
       }
     </style>
   </head>
@@ -56,7 +55,7 @@
     <!-- Header Section -->
     <header>
       <!-- NavBar -->
-      <nav class="bg-secondarys mb-8 sm:mb-[100px] border border-accents sm:border-none">
+      <nav class="bg-secondarys mb-8 sm:mb-[100px] border-[0.5px] border-texts sm:border-none">
         <div class="navbar w-11/12 mx-auto">
           <!-- Start -->
           <div class="navbar-start space-x-3">
@@ -131,7 +130,7 @@
             Pamper Your Pet,<br />
             Because They Deserve<br />the Best
           </h2>
-          <p class="text-texts max-w-[627px] lg:text-xl animate-pulse">
+          <p class="text-texts sm:max-w-[627px] lg:text-xl animate-pulse">
             Discover a world of treats, toys, and essentials handpicked for your
             furry friends. Shop now and make tails wag with joy!
           </p>
@@ -161,7 +160,8 @@
         <div class="flex flex-col md:flex-row gap-6 items-center w-full">
 
           <!-- Image container -->
-          <div class="w-full sm:w-2/5 bg-gradient-to-l from-secondarys to-[#fdd349] flex justify-center rounded-xl border-2 border-accents">
+          <div class="w-full sm:w-2/5 bg-gradient-to-l from-secondarys to-[#fdd349] flex justify-center rounded-xl border-2 border-accents
+          hover:from-[#fdd349] hover:to-secondarys">
             <img class="w-2/3 rounded-xl" src="./assets/husky5-removebg-preview.png" alt="Husky Dog">
           </div>
   
